@@ -1,0 +1,117 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* DEFAULT COLOR SCHEME */
+* {
+  /* primary */
+  --primary-black: #0d0d0e;
+  --primary-grey: #2b2c2d;
+  --primary-lightgrey: #939396;
+  --primary-lighest: #d7dadc;
+  --primary-text: #232325;
+  --primary-icon: #dcdfe2;
+  --primary-error: #e74c2a;
+  --primary-dangerAction: #ff0000;
+  --primary-success: #17cb29;
+
+  /* secondary */
+  --secondary-error: #e84b28;
+  --secondary-text: #6f6f71;
+  /* tertiary */
+}
+/* DEFAULT DIGITS SCHEME */
+* {
+  --default-borderRadius: 6px;
+  --rounded-borderRadius: 100px;
+}
+/* Buttons */
+.primaryButton-default-large {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 20px;
+  max-width: 335px;
+  width: 100%;
+  transition: all 0.2s ease;
+  background-color: var(--primary-black);
+  color: white;
+  border-radius: var(--default-borderRadius);
+  font-size: 18px;
+  text-decoration: none;
+}
+.primaryButton-default-large:hover {
+  background-color: var(--primary-grey);
+}
+.primaryButton-default-large:focus {
+  background-color: var(--primary-lightgrey);
+}
+.primaryButton-transparent-large {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 20px;
+  max-width: 335px;
+  width: 100%;
+  transition: all 0.2s ease;
+  background-color: transparent;
+  border: 2px solid var(--primary-lighest);
+  color: var(--primary-text);
+  border-radius: var(--default-borderRadius);
+  font-size: 18px;
+  text-decoration: none;
+}
+.primaryButton-transparent-large:hover {
+  border-color: var(--primary-black);
+}
+.primaryButton-transparent-large:focus {
+  border-color: var(--primary-lightgrey);
+}
+.roundedButton-default-large {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 20px;
+  max-width: 335px;
+  width: 100%;
+  transition: all 0.2s ease;
+  background-color: var(--primary-black);
+  color: white;
+  border-radius: var(--rounded-borderRadius);
+  font-size: 18px;
+  text-decoration: none;
+}
+.roundedButton-default-large:hover {
+  background-color: var(--primary-grey);
+}
+.roundedButton-default-large:focus {
+  background-color: var(--primary-lightgrey);
+}
+.roundedButton-transparent-large {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 20px;
+  max-width: 335px;
+  width: 100%;
+  transition: all 0.2s ease;
+  background-color: transparent;
+  border: 2px solid var(--primary-lighest);
+  color: var(--primary-text);
+  border-radius: var(--rounded-borderRadius);
+  font-size: 18px;
+  text-decoration: none;
+}
+.roundedButton-transparent-large:hover {
+  border-color: var(--primary-black);
+}
+.roundedButton-transparent-large:focus {
+  border-color: var(--primary-lightgrey);
+}
+/* PRODUCT CARD */
+/* Checkbox */
+/* Forms and inputs */
+/* Togglers */
+/* Validation */
+/* Icons */
+/* Bars */
