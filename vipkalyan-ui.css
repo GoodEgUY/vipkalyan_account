@@ -4,11 +4,13 @@
 
 /* DEFAULT COLOR SCHEME */
 * {
+  /* frame background*/
+  --default-light:#f7f8fa;
   /* primary */
   --primary-black: #0d0d0e;
   --primary-grey: #2b2c2d;
   --primary-lightgrey: #939396;
-  --primary-lighest: #d7dadc;
+  --primary-lightest: #d7dadc;
   --primary-text: #232325;
   --primary-icon: #dcdfe2;
   --primary-error: #e74c2a;
@@ -24,9 +26,11 @@
 * {
   --default-borderRadius: 6px;
   --rounded-borderRadius: 100px;
+  --default-hover:all .2s ease;
 }
 /* Buttons */
 .primaryButton-default-large {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,7 +50,28 @@
 .primaryButton-default-large:focus {
   background-color: var(--primary-lightgrey);
 }
+.primaryButton-default-small {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 26px;
+
+  transition: all 0.2s ease;
+  background-color: var(--primary-black);
+  color: white;
+  border-radius: var(--default-borderRadius);
+  font-size: 18px;
+  text-decoration: none;
+}
+.primaryButton-default-small:hover {
+  background-color: var(--primary-grey);
+}
+.primaryButton-default-small:focus {
+  background-color: var(--primary-lightgrey);
+}
 .primaryButton-transparent-large {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,7 +80,7 @@
   width: 100%;
   transition: all 0.2s ease;
   background-color: transparent;
-  border: 2px solid var(--primary-lighest);
+  border: 2px solid var(--primary-lightest);
   color: var(--primary-text);
   border-radius: var(--default-borderRadius);
   font-size: 18px;
@@ -64,10 +89,33 @@
 .primaryButton-transparent-large:hover {
   border-color: var(--primary-black);
 }
-.primaryButton-transparent-large:focus {
+.primaryButton-transparent-small:focus {
+  border-color: var(--primary-lightgrey);
+}
+.primaryButton-transparent-small {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 26px;
+  gap: 10px;
+  width: fit-content;
+  transition: all 0.2s ease;
+  background-color: transparent;
+  border: 2px solid var(--primary-lightest);
+  color: var(--primary-text);
+  border-radius: var(--default-borderRadius);
+ 
+  text-decoration: none;
+}
+.primaryButton-transparent-small:hover {
+  border-color: var(--primary-black);
+}
+.primaryButton-transparent-small:focus {
   border-color: var(--primary-lightgrey);
 }
 .roundedButton-default-large {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -88,6 +136,7 @@
   background-color: var(--primary-lightgrey);
 }
 .roundedButton-transparent-large {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,7 +145,7 @@
   width: 100%;
   transition: all 0.2s ease;
   background-color: transparent;
-  border: 2px solid var(--primary-lighest);
+  border: 2px solid var(--primary-lightest);
   color: var(--primary-text);
   border-radius: var(--rounded-borderRadius);
   font-size: 18px;
@@ -108,6 +157,176 @@
 .roundedButton-transparent-large:focus {
   border-color: var(--primary-lightgrey);
 }
+.primaryToggler-default {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 32px;
+}
+.primaryToggler-default input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.primaryToggler-default .knob {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--primary-lightest);
+  transition: 0.2s;
+  border-radius: 18px;
+}
+.primaryToggler-default .knob:before {
+  background-color: #ffffff;
+  color: #000000;
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 4px;
+  bottom: 4px;
+  transition: 0.2s;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.primaryToggler-default input:checked + .knob {
+  background-color: var(--primary-black);
+}
+.primaryToggler-default input:focus + .knob {
+  outline: none;
+}
+.primaryToggler-default input:checked + .knob:before {
+  color: #000000;
+  content: "";
+  background-color: #ffffff;
+  -webkit-transform: translateX(28px);
+  -ms-transform: translateX(28px);
+  transform: translateX(28px);
+}
+.primaryCheckbox-default {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.primaryCheckbox-default input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.primaryCheckbox-default input:checked ~ .checkbox__checkmark {
+  background-color: var(--primary-black);
+}
+.primaryCheckbox-default input:checked ~ .checkbox__checkmark:after {
+  opacity: 1;
+}
+.primaryCheckbox-default:hover input ~ .checkbox__checkmark {
+  background-color: #eee;
+}
+.primaryCheckbox-default:hover input:checked ~ .checkbox__checkmark {
+  background-color: var(--primary-black);
+}
+.primaryCheckbox-default .checkbox__checkmark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  transition: background-color 0.25s ease;
+  border-radius: 4px;
+}
+.primaryCheckbox-default .checkbox__checkmark:after {
+  content: "";
+  position: absolute;
+  left: 25%;
+  top: 50%;
+
+  width: 5px;
+  height: 10px;
+  border: solid var(--primary-lightest);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg) translateX(-50%) translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+.primaryCheckbox-default .checkbox__body {
+  color: #333;
+  line-height: 1.4;
+  font-size: 16px;
+}
+.primaryRadiobox-default {
+  font-weight: 300;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  box-sizing: border-box;
+  display: flex;
+  padding: 20px 20px 20px 50px;
+  font-weight: 500;
+  color: #191919;
+  -webkit-tap-highlight-color: transparent;
+}
+.primaryRadiobox-default input[type="radio"] {
+  position: relative;
+  appearance: none;
+  -webkit-appearance: none;
+  transition: linear 0.8s;
+  height: 0;
+  width: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+.primaryRadiobox-default input[type="radio"]:after {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  top: -10.5px;
+  left: -30px;
+  border-radius: 20px;
+  border: 2px solid var(--primary-lightest);
+  transition: linear 0.2s;
+  cursor: pointer;
+}
+
+.primaryRadiobox-default input[type="radio"]:checked:after {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  background: var(--primary-black);
+  border-color: var(--primary-black);
+  transition: linear 0.2s;
+  cursor: pointer;
+}
+
+.primaryRadiobox-default input[type="radio"]:checked:before {
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: #fff;
+  left: -26px;
+  top: -6.5px;
+  z-index: 1;
+  cursor: pointer;
+}
 /* PRODUCT CARD */
 /* Checkbox */
 /* Forms and inputs */
@@ -115,3 +334,9 @@
 /* Validation */
 /* Icons */
 /* Bars */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
