@@ -53,21 +53,70 @@
   width: 100%;
 }
 .userAccountContent-body {
-    padding: 24px 40px;
-    
+  padding: 24px 40px;
 }
 /* USER ACCOUNT HEADER */
 .userAccountContent-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.userAccountContent-blockName {
+    min-width: max-content;
+    font-size: 32px;
 }
 .userAccountContent-header-nav {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  width: 100%;
   gap: 12px;
 }
+
+.userAccountContent-header-search {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 380px;
+  border: 1px solid var(--primary-lightest);
+  padding: 18px 16px;
+  border-radius: var(--default-borderRadius);
+}
+.userAccountContent-header-search:focus {
+  border-color: var(--primary-black);
+}
+.userAccountContent-header-search input,
+button {
+  color: var(--primary-black);
+  border: 0;
+  background-color: transparent;
+}
+.userAccountContent-header-search input[type="text"] {
+  height: 56px;
+  font-size: 16px;
+  line-height: 1;
+  width: 100%;
+  transition: all 0.2s ease;
+}
+.userAccountContent-header-search input[type="text"]:focus {
+  outline: none;
+ 
+}
+
+.userAccountContent-header-search input[type="text"]::placeholder {
+  color: var(--primary-lightest);
+}
+
+.userAccountContent-header-search button {
+  position: relative;
+  display: block;
+  width: fit-content;
+  height: 56px;
+  cursor: pointer;
+}
+
 .userAccountContent-header-button {
   cursor: pointer;
   display: flex;
@@ -88,18 +137,18 @@
   font-size: 14px;
 }
 .userAccount-profileButton {
-    cursor: pointer;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-    background-color: white;
-    font-weight: 500;
-    font-size: 20px;
-    transition: var(--default-hover);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: white;
+  font-weight: 500;
+  font-size: 20px;
+  transition: var(--default-hover);
 }
 .userAccount-profileButton:hover {
-    background-color: var(--primary-lightest);
+  background-color: var(--primary-lightest);
 }
