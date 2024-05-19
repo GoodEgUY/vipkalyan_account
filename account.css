@@ -167,16 +167,22 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;
 }
 .emptyList-profile {
   display: flex;
+  align-items: center;
   background: white;
-  padding: 24px;  
+  padding: 24px;
+  gap: 32px;
+  width: 100%;
 }
 .emptyList-profileInfo {
   display: flex;
   align-items: center;
   gap: 16px;
+  width: 100%;
+  max-width: 450px;
 }
 .profileAvatar {
   display: flex;
@@ -193,7 +199,6 @@ button {
 .profileName {
   display: flex;
   flex-direction: column;
- 
 }
 .profileName h3 {
   font-size: 32px;
@@ -202,5 +207,77 @@ button {
 .profileName p {
   font-size: 16px;
   color: var(--primary-lightgrey);
+}
+.emptyList-helperBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 370px;
+  border: 1px solid var(--primary-lightest);
+  position: relative;
+}
+.emptyList-helperBox h4 {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+.emptyList-helperBox p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.helperBox-helpButton {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.emptyList-profileBalance {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  width: 172px;
+  height: 72px;
+  background-color: #F7F8FA;
+  border-radius: 8px;
+}
+.emptyList-profileBalance img {
+  width: 40px;
+}
+.emptyList-profileBalance p {
+  font-size: 32px;
+}
+.emptyList-profileBalance p span {
+  font-size: 16px;
+}
+.emptyList-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 64px;
+}
+.emptyList-BannerText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 4px;
+  width: 100%;
+  max-width: 490px;
+  margin-bottom: 32px;
+}
+.emptyList-BannerText h3 {
+  font-weight: 500;
+  font-size: 28px;
+}
+.emptyList-BannerText p {
+  color: var(--primary-lightgrey);
+  font-size: 18px;
 }
 /* PRODUCT ITEM */
