@@ -5,7 +5,7 @@
 /* DEFAULT COLOR SCHEME */
 * {
   /* frame background*/
-  --default-light:#f7f8fa;
+  --default-light: #f7f8fa;
   /* primary */
   --primary-black: #0d0d0e;
   --primary-grey: #2b2c2d;
@@ -13,6 +13,8 @@
   --primary-lightest: #d7dadc;
   --primary-text: #232325;
   --primary-icon: #dcdfe2;
+  --primary-sale: #dd3e1b;
+  --primary-sale-background: #dd3f1b2a;
   --primary-error: #e74c2a;
   --primary-dangerAction: #ff0000;
   --primary-success: #17cb29;
@@ -26,7 +28,7 @@
 * {
   --default-borderRadius: 6px;
   --rounded-borderRadius: 100px;
-  --default-hover:all .2s ease;
+  --default-hover: all 0.2s ease;
 }
 /* Buttons */
 .primaryButton-default-large {
@@ -105,7 +107,7 @@
   border: 2px solid var(--primary-lightest);
   color: var(--primary-text);
   border-radius: var(--default-borderRadius);
- 
+
   text-decoration: none;
 }
 .primaryButton-transparent-small:hover {
@@ -327,7 +329,136 @@
   z-index: 1;
   cursor: pointer;
 }
+.primaryPlusButton-default {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  background-color: var(--primary-black);
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+.primaryPlusButton-default:hover {
+  background-color: var(--primary-grey);
+}
+.primaryPlusButton-default:focus {
+  background-color: var(--primary-lightgrey);
+}
+/* CATEGORIES */
+.primaryCategoryButton-default {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 16px;
+  width: fit-content;
+  transition: all 0.2s ease;
+  background-color: transparent;
+  border: 1px solid var(--primary-lightest);
+  color: black;
+  border-radius: var(--rounded-borderRadius);
+  font-size: 16px;
+  text-decoration: none;
+}
+.primaryCategoryButton-default:hover {
+  background-color: var(--primary-grey);
+  color: white;
+}
+.primaryCategoryButton-default:focus {
+  background-color: var(--primary-lightgrey);
+}
+.activeCategory {
+  color: white;
+  background-color: black;
+  border-color: black;
+}
 /* PRODUCT CARD */
+.userAccount-productList {
+  border: 1px solid var(--primary-lightest);
+  margin-left: -2px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.productItem-default {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: -1px;
+  padding: 16px 16px 24px 16px;
+  width: calc(25% + 2px);
+  max-width: 280px;
+  border-bottom: 1px solid var(--primary-lightest);
+  border-left: 1px solid var(--primary-lightest);
+
+  &:empty {
+    height: 0;
+    border: none;
+  }
+}
+.productItem-default:last-child {
+  border-right: 1px solid var(--primary-lightest); /* Удаление правой границы для всех, кроме последнего */
+}
+.productItem-default-image {
+  margin-bottom: 24px;
+}
+.productItem-default-name {
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+.productItem-default-priceGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.productItem-priceStock-default {
+  font-weight: 700;
+  font-size: 20px;
+}
+.productItem-priceAction-default {
+  color: var(--primary-sale);
+  background-color: var(--primary-sale-background);
+  text-decoration: line-through;
+  border-radius: 35px;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 4px 8px;
+}
+.productItem-default-buttonGroup {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.productItem-default-buttonGroup img {
+  width: 32px;
+}
+.productItem-addToCart-default {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  transition: all 0.2s ease;
+  background-color: var(--primary-black);
+  color: white;
+  border-radius: var(--default-borderRadius);
+  font-size: 16px;
+  text-decoration: none;
+}
+.productItem-addToCart-default:hover {
+  background-color: var(--primary-grey);
+}
+.productItem-addToCart-default:focus {
+  background-color: var(--primary-lightgrey);
+}
 /* Checkbox */
 /* Forms and inputs */
 /* Togglers */
