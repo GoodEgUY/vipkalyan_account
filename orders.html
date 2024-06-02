@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./vipkalyan-ui.css">
+    <link rel="stylesheet" href="./account.css">
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Account</title>
+        <link rel="stylesheet" href="./account.css" />
+        <link rel="stylesheet" href="./vipkalyan-ui.css" />
+    </head>
+
+    <body>
+        <div class="mainWrapper">
+            <div class="userAccountMenu-wrapper">
+                <div class="userAccount-nav">
+                    <img src="./images/Logo.svg" alt="" class="userAccount-nav-logo" />
+                    <a href="#" class="userAccount-navItem"><img src="./images/ico/orders.svg" alt="" />Заказы</a>
+                    <a href="#" class="userAccount-navItem"><img src="./images/ico/bonuses.svg" alt="" />Бонусный
+                        счет</a>
+                    <a href="#" class="userAccount-navItem"><img src="./images/ico/wishlist.svg" alt="" />Избранные
+                    </a>
+                    <a href="#" class="userAccount-navItem"><img src="./images/ico/watched.svg"
+                            alt="" />Просмотренные</a>
+                    <a href="#" class="userAccount-navItem"><img src="./images/ico/waiting.svg" alt="" />Ожидаю
+                        наличия</a>
+                </div>
+                <div class="primaryButton-transparent-small">
+                    <img src="./images/ico/answer.svg" alt="" width="20px" />Нужна помощь?
+                </div>
+            </div>
+            <div class="userAccountContent-wrapper">
+                <div class="userAccountContent-body">
+                    <div class="userAccountContent-header">
+                        <h1 class="userAccountContent-blockName">Бонусный счёт</h1>
+
+                        <div class="userAccountContent-header-nav">
+                            <form method="get" action="" class="userAccountContent-header-search">
+                                <input type="text" placeholder="Search" required />
+
+                                <button type="submit" class="userAccountContent-header-searchButton">
+                                    <img src="./images/ico/search-small.svg" alt="" />
+                                </button>
+                            </form>
+                            <div class="userAccountContent-header-button">
+                                <img src="./images/ico/cart.svg" alt="" />
+                            </div>
+                            <div class="userAccountContent-header-button">
+                                <p>378<span>грн</span></p>
+                                <img src="./images/ico/uah-coin.svg" alt="" />
+                            </div>
+                            <div class="userAccount-profileButton">АК</div>
+                        </div>
+                    </div>
+                    <div class="userAccount-pageTopNav">
+                        <div class="primaryPlusButton-default">
+                            <img src="./images/ico/plus.svg" alt="" />
+                        </div>
+                        <a href="" class="primaryCategoryButton-default activeCategory">Все товары</a>
+                        <a href="" class="primaryCategoryButton-default">Кальяны</a>
+                        <a href="" class="primaryCategoryButton-default">Электронки</a>
+                        <a href="" class="primaryCategoryButton-default">Легкие табаки </a>
+                        <a href="" class="primaryCategoryButton-default">Крепкие табаки</a>
+                    </div>
+                    <!-- Список заказов -->
+                    <div class="userAccount-orderList">
+                        <div class="orderListHeader">
+                            <p class="orderNumber">
+                                Номер заказа
+                            </p>
+                            <p class="orderProductName">
+                                Название
+                            </p>
+                            <p class="orderDate">
+                                Дата
+                            </p>
+                            <p class="orderCost">
+                                Сумма
+                            </p>
+                            <p class="orderBonuses">
+                                Бонусы
+                            </p>
+                            <p class="orderStatus">
+                                Статус
+                            </p>
+                        </div>
+                        <div class="orderListItem">
+                            <div class="orderNumber">
+                                <p>№563213</p>
+                            </div>
+                            <div class="orderProductName">
+                                <p>Табак Serbetli Ice Blueberry (Черника Лід) 50гр</p>
+                            </div>
+                            <div class="orderDate">
+                                <p>29.03.24</p>
+                            </div>
+                            <div class="orderCost">
+                                <p>90 ₴ </p>
+                            </div>
+                            <div class="orderBonuses">
+                                <p>+33</p><img src="./images/ico/coin-small.svg" alt="">
+                            </div>
+                            <div class="orderStatus">
+                                <p>Отправлен</p>
+                            </div>
+                        </div>
+                        <div class="orderListItem">
+                            <div class="orderNumber">
+                                <p>№563213</p>
+                            </div>
+                            <div class="orderProductName">
+                                <p>Табак Serbetli Ice Blueberry (Черника Лід) 50гр</p>
+                            </div>
+                            <div class="orderDate">
+                                <p>29.03.24</p>
+                            </div>
+                            <div class="orderCost">
+                                <p>90 ₴ </p>
+                            </div>
+                            <div class="orderBonuses">
+                                <p>+33</p><img src="./images/ico/coin-small.svg" alt="">
+                            </div>
+                            <div class="orderStatus">
+                                <p>Отправлен</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Список заказов -->
+                    <!-- детальная информация о заказе -->
+                    <div class="userAccount-orderDetails">
+                        <div class="orderDetails-content">
+                            <div class="orderDetails-photo"><img src="./images/product-image-big.png" alt="">
+                                <div class="otherOrderProductsPhotos">
+                                    <div class="orderProductsPhotos-Item orderProductsPhotos-selected"><img
+                                            src="./images/Rectangle 907.png" alt=""></div>
+                                    <div class="orderProductsPhotos-Item "><img src="./images/Rectangle 907-1.png"
+                                            alt=""></div>
+                                </div>
+                                <div class="orderProductButtonsGroup"><a href=""
+                                        class="roundedButton-default-large">Заказать повторно</a>
+                                    <a href="" class="roundedButton-transparent-large">Оставить отзыв</a>
+                                </div>
+                            </div>
+                            <div class="orderDetails-productListWrapper">
+                                <h3 class="blockHeader">Детальная информация о заказе №563213</h3>
+                                <div class="orderDetails-productListContent">
+                                    <div class="orderProductItem">
+                                        <h5>Товар (1)</h5>
+                                        <div class="orderProductAttribute">
+                                            <p>Название</p>
+                                            <div class="dottedSeparator"></div>
+                                            <h6>Табак Serbetli Ice Blueberry (Черника Лід) 50гр</h6>
+                                        </div>
+                                        <div class="orderProductAttribute">
+                                            <p>Код</p>
+                                            <div class="dottedSeparator"></div>
+                                            <h6>№563213</h6>
+                                        </div>
+                                        <div class="orderProductAttribute">
+                                            <p>Кол-во</p>
+                                            <div class="dottedSeparator"></div>
+                                            <h6>1шт.</h6>
+                                        </div>
+                                        <div class="orderProductAttribute">
+                                            <p>Цена</p>
+                                            <div class="dottedSeparator"></div>
+                                            <h6>90 грн.</h6>
+                                        </div>
+                                    </div>
+                                    <div class="orderProductItem">
+                                        <h5>Товар (1)</h5>
+                                        <div class="orderProductAttribute">
+                                            <p>Название</p>
+                                            <div class="dottedSeparator"></div>
+                                            <h6>Табак Serbetli Ice Blueberry (Черника Лід) 50гр</h6>
+                                        </div>
+                                        <div class="orderProductAttribute">
+                                            <p>Код</p>
+                                            <div class="dottedSeparator"></div>
+                                            <h6>№563213</h6>
+                                        </div>
+                                        <div class="orderProductAttribute">
+                                            <p>Кол-во</p>
+                                            <div class="dottedSeparator"></div>
+                                            <h6>1шт.</h6>
+                                        </div>
+                                        <div class="orderProductAttribute">
+                                            <p>Цена</p>
+                                            <div class="dottedSeparator"></div>
+                                            <h6>90 грн.</h6>
+                                        </div>
+                                    </div>
+                                    <div class="orderProductItem">
+                                        <h5>Товар (1)</h5>
+                                        <div class="orderProductAttribute">
+                                            <p>Название</p>
+                                            <div class="dottedSeparator"></div>
+                                            <h6>Табак Serbetli Ice Blueberry (Черника Лід) 50гр</h6>
+                                        </div>
+                                        <div class="orderProductAttribute">
+                                            <p>Код</p>
+                                            <div class="dottedSeparator"></div>
+                                            <h6>№563213</h6>
+                                        </div>
+                                        <div class="orderProductAttribute">
+                                            <p>Кол-во</p>
+                                            <div class="dottedSeparator"></div>
+                                            <h6>1шт.</h6>
+                                        </div>
+                                        <div class="orderProductAttribute">
+                                            <p>Цена</p>
+                                            <div class="dottedSeparator"></div>
+                                            <h6>90 грн.</h6>
+                                        </div>
+                                    </div>
+                                    <div class="orderProduct-total">
+                                        <p><b>Итого к оплате</b></p>
+                                        <div class="dottedSeparator"></div>
+                                        <p><b>3090 грн.</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- детальная информация о заказе -->
+
+                    <!-- Пустая история заказов -->
+                    <div class="userAccount-emptyProductList">
+                        <div class="emptyList-profile">
+                            <div class="emptyList-profileInfo">
+                                <div class="profileAvatar">
+                                    <p>AK</p>
+                                </div>
+                                <div class="profileName">
+                                    <h3>Артур Кулида</h3>
+                                    <p>ID #192498328</p>
+                                </div>
+                            </div>
+                            <div class="emptyList-helperBox">
+                                <div class="helperBox-helpButton">
+                                    <img src="./images/ico/helper.svg" alt="" />Детальнее
+                                </div>
+                                <h4>Как это работает?</h4>
+                                <p>Сумма кэшбэка от 5%</p>
+                                <p>Бонусы начисляются после получения посылки</p>
+                                <p>Бонусами можно оплачивать до 100% от суммы заказа</p>
+                            </div>
+                            <div class="emptyList-profileBalance">
+                                <p>0<span>грн</span></p>
+                                <img src="./images/ico/uah-coin.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="emptyList-banner">
+                            <img src="./images/ico/bonuses-icon.svg" alt="" />
+                            <div class="emptyList-BannerText">
+                                <h3>Пока нет истории</h3>
+                                <p>
+                                    У Вас пока нет истории бонусов! Здесь будет отображаться
+                                    история начисления и списания бонусов, а так же детальная
+                                    информация о заказе!
+                                </p>
+                            </div>
+                            <a href="" class="primaryButton-default-large">Перейти в каталог</a>
+                        </div>
+                    </div>
+                    <!-- Пустая история заказов -->
+                </div>
+            </div>
+        </div>
+    </body>
+
+    </html>
+
+</body>
+
+</html>
